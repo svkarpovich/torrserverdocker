@@ -3,9 +3,9 @@
 #
 
 FROM ubuntu:latest
-MAINTAINER Bob <kcey@mail.ru>
+MAINTAINER svkarpovich <svkarpovich@gmail.com>
 
-ENV TS_URL=https://releases.yourok.ru/torr/server_release.json
+ENV TS_URL=https://raw.githubusercontent.com/svkarpovich/TorrServer/master/server_release.json
 ENV TS_RELEASE="latest"
 ENV TS_PORT="8090"
 ENV TS_UPDATE="true"
@@ -14,7 +14,7 @@ ENV LINUX_UPDATE="true"
 ENV TS_CONF_PATH=/TS/db
 ENV TS_TORR_DIR=/TS/db/torrents
 
-ENV GIT_URL=https://api.github.com/repos/YouROK/TorrServer/releases
+ENV GIT_URL=https://api.github.com/repos/svkarpovich/TorrServer/releases
 ENV FFBINARIES="https://ffbinaries.com/api/v1/version/latest"
 ENV USER_AGENT="Mozilla/5.0 (X11; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0"
 
